@@ -1,1 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 30px;
+    padding-left: 30px; 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* top part */
+
+.top {
+    padding: 10px;
+    background-color: hsl(0, 0%, 96%);
+    height: 40px;
+}
+
+
+.headerLinks {  
+    display: flex;
+    flex-direction: row nowrap;
+    float: right;
+    
+}
+
+.headerLinks > div {
+    margin: 0 20px 0 20px;
+
+}
+.headerLinks a {
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.headerLinks a:hover {
+    color: rgba(0, 0, 0, 0.6);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* category */
+
+.category {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/* nikelogo */
+
+.nikelogo {
+    position: absolute;
+    left: 40px;
+    width: 60px;
+}
+
+/* category */
+
+.category a {
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    color: black;
+    font-family: sans-serif;
+}
+.category a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    position: absolute;
+    right: 20px;
+}
+
+.search {
+    position: absolute;
+    right: 150px;
+}
+
+.search > input{
+    border-radius: 50px;
+    height: 40px;
+    background-color: lightgrey;
+    float: right;
+    text-align: center;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 80px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sec 
+{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.sec > h4 {
+   font-size: 70px;
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+.sec > p {
+   position: relative;
+   top: 0px;   
+}
+
+.sec > button {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+}
+
+/* categories pretty in pink */
+
+.categories{
+    margin: 100px ;
+   
+}
+.categories > p{
+    position:relative;
+    top: 7px;
+    left: 37px;
+}
+.row
+{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.col-4
+{
+    flex-basis: 30%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transform: translateX(-5px);
+}
+
+ /* latest */
+ 
+.latest
+{
+    margin: 100px ;
+   
+}
+.col
+{
+    flex-basis: 50%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transform: translateX(-5px);
+}
+.bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+
+  }
+.bottom-left > button {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-family: sans-serif;
+}
+.bottom-left2 {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: aliceblue;
+
+  }
+.bottom-left2 > button {
+    background-color: rgb(255, 253, 253);
+    border-radius: 50px;
+    color: rgb(19, 19, 19);
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-family: sans-serif;
+}
+
+
+
+
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section > button:hover {
+    background-color: lightgray;
+}
+
+/* shoe's scrollbar */
+.rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-padding: 10px 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-left: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.rows::-webkit-scrollbar {
+    display: none;
+}
+
+/* shoe cards */
+
+.card {
+    scroll-snap-align: start;
+    margin-right: 1rem;
+    width: 100%; /* Set a fixed width for the cards */
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+
+.sect {
+    text-align: center;
+    padding: 20px;
+}
+
+.sect > h4 {
+   font-size: 70px;
+   font-family: 'Bebas Neue', sans-serif;
+   position: relative;
+  
+}
+
+.sect > p {
+   
+   top:20px;   
+}
+.sect > button {
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: none;
+}
+
+/* footer */
+
+footer {
+    margin-top: 150px;
+    background-color: black;
+    width: 100%;
+    font-size: small;
+}
+.footer_lists {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+}
+.footer_lists > div {
+    flex-basis: 400px;
+    margin: 50px;
+}
+
+.first  a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px 0px 20px 0;
+}
+.second  a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px 0px 20px 0;
+}
+.second  span {
+    display: block;
+    font-size: 11px;
+}
+.third  a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px 0px 20px 0;
+}
+.third  span {
+    display: block;
+    font-size: 11px;
+}
+
+.footer_lists > .socialicons {
+    height: 35px;
+    position: absolute;
+    right: 90px;
+    flex-basis: 500px;
+}
+.socialicons > img {
+    margin: 5px;
+    border-radius: 15px;
+}
